@@ -1,0 +1,10 @@
+minnan 0
+nanchang 1
+kejia 2
+changsha 3
+shanghai 4
+hebei 5
+ningxia 6
+shan3xi 7
+hefei 8
+sichuan 9

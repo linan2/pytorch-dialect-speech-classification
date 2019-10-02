@@ -1,0 +1,23 @@
+Done!
+Done!
+2018-10-10 21:25:52,451[INFO] ---- finish reading all train data
+Traceback (most recent call last):
+  File "train.py", line 67, in <module>
+    train_module = LanNet(input_dim=dimension, hidden_dim=512, bn_dim=30, output_dim=language_nums)
+  File "/Work18/2017/linan/ASR/keda/newtrain/aichallenge/train/2.trainLSTM/net_component.py", line 15, in __init__
+    self.layer1 = nn.Sequential(nn.LSTM(self.input_dim, self.hidden_dim/2, num_layers=4, batch_first=True, bidirectional=True))
+  File "/opt18/cca/stack-2018Q3/lib/python3.5/site-packages/torch/nn/modules/rnn.py", line 425, in __init__
+    super(LSTM, self).__init__('LSTM', *args, **kwargs)
+  File "/opt18/cca/stack-2018Q3/lib/python3.5/site-packages/torch/nn/modules/rnn.py", line 52, in __init__
+    w_ih = Parameter(torch.Tensor(gate_size, layer_input_size))
+TypeError: new() received an invalid combination of arguments - got (float, int), but expected one of:
+ * (torch.device device)
+ * (torch.Storage storage)
+ * (Tensor other)
+ * (tuple of ints size, torch.device device)
+      didn't match because some of the arguments have invalid types: (!float!, !int!)
+ * (object data, torch.device device)
+      didn't match because some of the arguments have invalid types: (!float!, !int!)
+
+gpu01
+Done.

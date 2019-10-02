@@ -1,0 +1,6 @@
+-#!/bin/usr/bash 
+mkdir -p after_vad
+for x in `cat allwav`;do
+    ./apply-vad --frame-len=0.025 --frame-shift=0.01 --energy-thresh=1.5e7 --sil-to-speech-trigger=3 --speech-to-sil-trigger=10 $x after_vad/`echo $x | awk -F '/' '{print $NF}'`
+    echo $x
+done
